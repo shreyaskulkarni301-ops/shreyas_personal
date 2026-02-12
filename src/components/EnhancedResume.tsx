@@ -8,23 +8,22 @@ export function EnhancedResume() {
   const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
-    setIsDownloading(true);
-    
-    // Simulate download (in production, this would link to your actual resume PDF)
-    setTimeout(() => {
-      setIsDownloading(false);
-      setDownloaded(true);
-      
-      // Create a temporary link to download the resume
-      const link = document.createElement('a');
-      link.href = '/Users/shreyaskulkarni/Desktop/Shreyas_Personal/Shreyas Kulkarni/src/assets/Shreyas_Kulkarni_Resume.pdf'// You'll replace this with your actual resume
-      link.download = '/Users/shreyaskulkarni/Desktop/Shreyas_Personal/Shreyas Kulkarni/src/assets/Shreyas_Kulkarni_Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      setTimeout(() => setDownloaded(false), 3000);
-    }, 1000);
+  setIsDownloading(true);
+
+  setTimeout(() => {
+    setIsDownloading(false);
+    setDownloaded(true);
+
+    const link = document.createElement("a");
+    link.href = "/Shreyas_Kulkarni_Resume.pdf";
+    link.download = "Shreyas_Kulkarni_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => setDownloaded(false), 3000);
+  }, 1000);
+};
   };
 
   return (
