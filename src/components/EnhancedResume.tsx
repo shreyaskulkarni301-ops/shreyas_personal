@@ -23,8 +23,7 @@ export function EnhancedResume() {
 
     setTimeout(() => setDownloaded(false), 3000);
   }, 1000);
-};
-  };
+ };
 
   return (
     <section id="resume" className="relative py-32 overflow-hidden">
