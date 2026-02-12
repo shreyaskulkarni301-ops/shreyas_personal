@@ -17,7 +17,7 @@ export function EnhancedResume() {
       
       // Create a temporary link to download the resume
       const link = document.createElement('a');
-      link.href = '/Shreyas Kulkarni/src/components/assets/Shreyas_Kulkarni_Resume.pdf'// You'll replace this with your actual resume
+      link.href = '/Users/shreyaskulkarni/Desktop/Shreyas_Personal/Shreyas Kulkarni/src/assets'// You'll replace this with your actual resume
       link.download = 'Shreyas_Kulkarni_Resume.pdf';
       document.body.appendChild(link);
       link.click();
