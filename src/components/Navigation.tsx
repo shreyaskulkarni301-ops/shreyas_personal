@@ -41,6 +41,7 @@ export function Navigation() {
               { label: "Work", id: "projects" },
               { label: "About", id: "about" },
               { label: "Case Study", id: "case-study" },
+              { label: "Resume", id: "resume" },
             ].map((link) => (
               <motion.button
                 key={link.id}

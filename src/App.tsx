@@ -4,6 +4,7 @@ import { ImpactStats } from "./components/ImpactStats";
 import { EnhancedProjects } from "./components/EnhancedProjects";
 import { EnhancedAbout } from "./components/EnhancedAbout";
 import { EnhancedCaseStudy } from "./components/EnhancedCaseStudy";
+import { EnhancedResume } from "./components/EnhancedResume";
 import { EnhancedFooter } from "./components/EnhancedFooter";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { AIBackground } from "./components/AIBackground";
@@ -23,6 +24,7 @@ export default function App() {
         <EnhancedProjects />
         <EnhancedAbout />
         <EnhancedCaseStudy />
+        <EnhancedResume />
         <EnhancedFooter />
       </div>
     </ThemeProvider>
